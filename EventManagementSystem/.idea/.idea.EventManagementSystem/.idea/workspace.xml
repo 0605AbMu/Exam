@@ -4,15 +4,43 @@
     <projectFile>EventManagementSystem.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5361fa62-87bd-4fb9-976a-0ef6faee8457" name="Changes" comment="Project initialized on .netcore 6.0">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EventManagementSystem/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EventManagementSystem/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EventManagementSystem/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5361fa62-87bd-4fb9-976a-0ef6faee8457" name="Changes" comment="Added project initial file">
+      <change afterPath="$PROJECT_DIR$/Models/Application.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/ApplicationStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Company.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Room.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StorageBroker/Attributies/DBAttributies.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StorageBroker/DBWrapper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StorageBroker/DataBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/AdminView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/Main.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/UserView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UI/View.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EventManagementSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EventManagementSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventManagementSystem.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EventManagementSystem.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InitializeDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../InitializeDB.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1af51483c9bf18871cce649b9f966dd7be686536f998c33bba3c5fc4adea4a0/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/StorageBroker/DBWrapper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,6 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowCommit.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -63,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670825417700</updated>
-      <workItem from="1670825423349" duration="498000" />
+      <workItem from="1670825423349" duration="10781000" />
     </task>
     <task id="LOCAL-00001" summary="Project initialized on .netcore 6.0">
       <created>1670825625250</created>
@@ -72,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670825625250</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added project initial file">
+      <created>1670826007107</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670826007107</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +139,26 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Project initialized on .netcore 6.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project initialized on .netcore 6.0" />
+    <MESSAGE value="Added project initial file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added project initial file" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/StorageBroker/DataBase.cs</url>
+          <line>37</line>
+          <properties documentPath="C:\Users\Abdumannon-PC\Desktop\Exam\EventManagementSystem\StorageBroker\DataBase.cs" initialLine="37" containingFunctionPresentation="method 'ExecuteQueryAndReturnAsAsync'">
+            <startOffsets>
+              <option value="1283" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1326" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -55,6 +55,7 @@ CREATE TABLE [Application]
     [id]        int PRIMARY KEY IDENTITY (1, 1),
     [userId]    int      NOT NULL,
     [roomId]    int      NOT NULL,
+    [companyId] int      NOT NULL,
     [startAt]   datetime NOT NULL,
     [endAt]     datetime NOT NULL,
     [status]    int      NOT NULL,
@@ -98,6 +99,10 @@ ALTER TABLE [Application]
     ADD FOREIGN KEY ([userId]) REFERENCES [User] ([id]) ON DELETE CASCADE
 GO
 
+ALTER TABLE [Application]
+    ADD FOREIGN KEY ([companyId]) REFERENCES [Company] ([id]) ON DELETE CASCADE
+GO
+
 ALTER TABLE [User]
     ADD FOREIGN KEY ([roleId]) REFERENCES [Role] ([id])
 GO
@@ -126,6 +131,17 @@ ALTER TABLE [Order]
     ADD FOREIGN KEY ([roomId]) REFERENCES [Room] ([id]) ON DELETE CASCADE
 GO
 
+
+IF EXISTS(SELECT * FROM sys.views WHERE name = 'VIEW_GetAllUsers')
+BEGIN
+DROP VIEW VIEW_GetAllUsers;
+END GO;
+
+CREATE VIEW VIEW_GetAllUsers AS SELECT id, name, roleId as role, companyId, username, password, createdAt, updatedAt FROM [User];
+GO;
+
+
+
 INSERT INTO [Role] (roleName, status)
 VALUES ('Superadmin', 1),
        ('Admin', 1),
@@ -133,3 +149,18 @@ VALUES ('Superadmin', 1),
 
 INSERT INTO [User] (name, roleId, companyId, username, password, createdAt, updatedAt)
 VALUES ('Admin', 1, null, 'admin', 'admin', GETDATE(), GETDATE())
+
+INSERT INTO Company (name, details) VALUES ('Unknown', '...');
+
+INSERT INTO Room (name, capacity, createdAt, updatedAt)
+VALUES
+('Tencent', 20, GETDATE(), GETDATE());
+
+
+INSERT INTO [User] (name, roleId, companyId, username, password, createdAt, updatedAt)
+VALUES ('Abdumannon', 3, 1, '0605AbMu', '12345678', GETDATE(), GETDATE())
+
+
+INSERT INTO [Application] (userId, roomId, companyId, startAt, endAt, status, createdAt, updatedAt)
+VALUES
+(1, 1, 1, GETDATE(), GETDATE(), 1, GETDATE(), GETDATE())
